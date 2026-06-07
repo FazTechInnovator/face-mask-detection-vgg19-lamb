@@ -1,0 +1,35 @@
+{
+  "source_dataset": "Face Mask Detection",
+  "source_url": "https://www.kaggle.com/datasets/andrewmvd/face-mask-detection",
+  "source_viewer": "https://datasetninja.com/face-mask-detection",
+  "license": "CC0 1.0",
+  "raw_dir": "raw_datasets/face_mask_detection",
+  "prepared_dataset_dir": "dataset",
+  "class_mapping": {
+    "with_mask": "mask",
+    "without_mask": "no_mask",
+    "mask_weared_incorrect": "incorrect_mask"
+  },
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "prepared_counts": {
+    "train": {
+      "mask": 1901,
+      "no_mask": 379,
+      "incorrect_mask": 75
+    },
+    "val": {
+      "mask": 402,
+      "no_mask": 101,
+      "incorrect_mask": 21
+    },
+    "test": {
+      "mask": 415,
+      "no_mask": 64,
+      "incorrect_mask": 16
+    }
+  }
+}
