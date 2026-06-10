@@ -1,0 +1,27 @@
+image_size: 224
+batch_size: 32
+epochs: 15
+fine_tune_epochs: 10
+learning_rate: 0.0001
+fine_tune_learning_rate: 0.00001
+weight_decay: 0.00001
+fine_tune_at: 16
+
+class_names:
+  - mask
+  - no_mask
+  - incorrect_mask
+
+dataset_dir: dataset
+raw_dataset_dir: raw_datasets/face_mask_detection
+model_path: outputs/best_model.keras
+final_model_path: outputs/final_model.keras
+class_names_path: outputs/class_names.json
+output_dir: outputs
+prediction_output_dir: outputs/predictions
+evaluation_output_dir: outputs/evaluation
+training_output_dir: outputs/training
+dataset_preparation_output_dir: outputs/dataset_preparation
+feature_cache_dir: outputs/feature_cache
+min_confidence: 0.90
+min_margin: 0.25
