@@ -10,9 +10,6 @@ raw_datasets/
 *.keras
 !outputs/best_model.keras
 
-dataset/**
-!dataset/README.md
-
 outputs/*
 !outputs/.gitkeep
 !outputs/best_model.keras
